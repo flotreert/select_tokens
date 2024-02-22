@@ -19,6 +19,7 @@
     justify-content: space-between;
     margin: 5px;
     padding: 5px;
+    padding-left: 4px;
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
@@ -47,7 +48,7 @@
 .token-image-small {
     width: 20px;
     height: 20px;
-    margin: 5px;
+    margin-left: 5px;
 }
 
 .token-image-extra-small {
@@ -92,5 +93,4 @@
     padding: 5px;
     border: 2px solid rgb(204, 204, 204);
     border-radius: 5px;
-    /* box-shadow: 2px 2px 2px 2px rgba(49, 49, 49, 0.25); */
 }
