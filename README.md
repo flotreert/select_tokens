@@ -2,7 +2,9 @@
 
 This is a Select token UI.
 
-![UI Image](./ui.png)
+[![Watch the video](./ui-select-tokens.webm)](./ui-select-tokens.webm)
+
+[![Watch the video](./ui.png)](./ui-select-tokens.webm)
 
 ## Getting Started
 
