@@ -4,7 +4,6 @@ import './tokensSelector.css';
 
 function TokenSelector() {
     // Define the state to hold the selected value and search query
-    const [selectedValue, setSelectedValue] = useState('');
     const [searchQuery, setSearchQuery] = useState('');
     const [selectedCurrencies, setSelectedCurrencies] = useState<string[]>([]);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -21,10 +20,6 @@ function TokenSelector() {
         { id: 'ICP', name: 'Internet Computer', img: 'https://cryptologos.cc/logos/internet-computer-icp-logo.png' },
     ];
 
-    // Handle the change event when the user selects an option
-    const handleChange = (event: any) => {
-        setSelectedValue(event.target.value);
-    };
 
     // Handle the change event when the user types in the search bar
     const handleSearchChange = (event: any) => {
@@ -39,6 +34,7 @@ function TokenSelector() {
     );
 
 
+    // Handle the change event when the user check an option
     const handleCheckboxChange = (token: Object) => {
         const tokenStr = JSON.stringify(token);
         if (selectedCurrencies.includes(tokenStr)) {
@@ -46,7 +42,6 @@ function TokenSelector() {
         } else {
             setSelectedCurrencies([...selectedCurrencies, tokenStr]);
         }
-        console.log(selectedCurrencies);
     };
 
 
